@@ -7,15 +7,18 @@ console.log('Sample JavaScript HW#1');
  */
 
 // имя переменной: myNum, значение: 10
-
+var myNum = 10; 
 // имя переменной: myStr, значение: 'строка'
-
+var myStr = 'строка';
 // имя переменной: myBool, значение: true
-
+var myBool = true; 
 // имя переменной: myArr, значения: 1, 2, 3, 4, 5
-
+var myArr = Array(1,2,3,4,5);
+console.log(myArr)
 // имя переменной myObj, значения: first: 'First Name', last: 'Last Name'
-
+var myObj = {
+  first : 'First Name',
+  last : 'Last Name'}
 /*
  * #2
  *
@@ -23,9 +26,9 @@ console.log('Sample JavaScript HW#1');
  * чтобы получить результат с 2 знаками после запятой.
  * Результат сохраните в переменную decimal2.
  */
-
-// decimal2
-
+ 
+var decimal2 = myNum / 8; 
+console.log(decimal2)
 /*
  * #3
  *
@@ -35,7 +38,12 @@ console.log('Sample JavaScript HW#1');
  */
 
 // i
-
+var i = 1;
+i = ++i;
+i = --i;
+i = i++;
+i = i--;
+console.log(i)
 /*
  * #4
  *
@@ -45,18 +53,22 @@ console.log('Sample JavaScript HW#1');
  * В вычислениях можно использовать объявленную ранее переменную myNum и/или числа.
  */
 
-// myTest
+var myTest = 20 ;
 
-// +=
+v=myTest += 10;
 
-// –=
+n=myTest -= 10;
 
-// *=
+m=myTest *= 10;
 
-// /=
+f=myTest /= 10;
 
-// %=
-
+g=myTest %= 10;
+console.log(v);
+console.log(n);
+console.log(m);
+console.log(f);
+console.log(g);
 /*
  * #5
  *
@@ -64,20 +76,24 @@ console.log('Sample JavaScript HW#1');
  */
 
 // константа Pi → myPi
-
+var myPi = Math.PI;
+console.log(myPi);
 // округленное значение числа 89.279 → myRound
-
+var myRound = Math.round (89.279);
+console.log(myRound);
 // случайное число между 0..10 → myRandom
-
 // 3 в 5 степени → myPow
-
+var myPow = Math.pow(3 ,5)
+console.log( myPow)
 /*
  * #6
  *
  * Создайте объект с именем strObj.
  * Присвойте ключу str строку текста "Мама мыла раму, рама мыла маму", ключу length установите длину этой строки.
  */
-
+var strObj = 'Мама мыла раму, рама мыла маму';
+console.log(strObj)
+console.log(strObj.length);
 // Мама мыла раму, рама мыла маму
 
 // strObj
