@@ -27,7 +27,7 @@ var myObj = {
  * Результат сохраните в переменную decimal2.
  */
  
-var decimal2 = myNum / 8; 
+var decimal2 =myNum.toFixed(2)
 console.log(decimal2)
 /*
  * #3
@@ -82,21 +82,23 @@ console.log(myPi);
 var myRound = Math.round (89.279);
 console.log(myRound);
 // случайное число между 0..10 → myRandom
+var myRandom = Math.random()*10;
+console.log(myRandom);
 // 3 в 5 степени → myPow
-var myPow = Math.pow(3 ,5)
-console.log( myPow)
+var myPow = Math.pow(3 ,5);
+console.log( myPow);
 /*
  * #6
  *
  * Создайте объект с именем strObj.
  * Присвойте ключу str строку текста "Мама мыла раму, рама мыла маму", ключу length установите длину этой строки.
  */
-var strObj = 'Мама мыла раму, рама мыла маму';
-console.log(strObj)
-console.log(strObj.length);
 // Мама мыла раму, рама мыла маму
 
 // strObj
+var strObj = {str: 'Мама мыла раму, рама мыла маму'};
+strObj.length = strObj.str.length;
+console.log(strObj );
 
 /*
  * #7
@@ -105,7 +107,8 @@ console.log(strObj.length);
  * результат сохраните в переменную isRamaPos и выведите ее в консоль.
  */
 
-// isRamaPos
+var isRamaPos = strObj.str . indexOf('рама');
+console.log(isRamaPos);
 
 /*
  * #8
@@ -117,9 +120,13 @@ console.log(strObj.length);
  */
 
 // strReplace
-
+var strReplace = strObj.str .replace ('Мама мыла раму, рама мыла маму','Мама моет раму, Рама держит маму')
+console.log(strReplace)
 /*
  * #9
  *
  * Преобразуйте любую строку в верхний, затем в нижний регистры, результат отобразите в консоли.
+ * 
  */
+console.log(strReplace.toUpperCase());
+console.log(strObj.str.toLowerCase());
